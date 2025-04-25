@@ -70,7 +70,7 @@ export const dropdownConfig = [
           };
 
           // Create a unique set of results based on selected values
-          const resultSet = new Set();
+          const resultSet: Set<string> = new Set();
           selectedValues.forEach((value) => {
             if (options[value]) {
               options[value].forEach((option) => {
